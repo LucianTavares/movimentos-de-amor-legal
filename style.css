@@ -1,0 +1,106 @@
+:root {
+  --roxo: #6b4c93;
+  --rosa: #ff7aae;
+  --creme: #fff3e6;
+  --texto: #2b2233;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--creme);
+  color: var(--texto);
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 1.0625rem;
+  line-height: 1.65;
+}
+
+.pagina {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+a { color: var(--roxo); text-decoration: underline; }
+a:hover { color: #4a3268; }
+a:focus-visible {
+  outline: 3px solid var(--roxo);
+  outline-offset: 3px;
+  border-radius: 3px;
+}
+
+.idiomas {
+  display: flex;
+  gap: .5rem;
+  flex-wrap: wrap;
+  margin: 0 0 1rem;
+  padding: 0;
+  list-style: none;
+  font-size: .95rem;
+}
+.idiomas a, .idiomas span {
+  display: inline-block;
+  padding: .25rem .75rem;
+  border: 1px solid var(--roxo);
+  border-radius: 999px;
+}
+.idiomas span {
+  background: var(--roxo);
+  color: #fff;
+  font-weight: 600;
+}
+
+.cartao {
+  background: #fff;
+  border-radius: 16px;
+  padding: 1.25rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 1px 4px rgba(107, 76, 147, .12);
+}
+
+header.cartao { border-top: 6px solid var(--rosa); }
+
+h1 { color: var(--roxo); font-size: 1.7rem; line-height: 1.25; margin: 0 0 .25rem; }
+h2 { color: var(--roxo); font-size: 1.3rem; line-height: 1.3; margin: 0 0 .5rem; }
+h3 { color: var(--roxo); font-size: 1.1rem; margin: 1rem 0 .25rem; }
+
+.data { margin: 0 0 1rem; color: #5a4a68; }
+
+.resumo {
+  background: var(--creme);
+  border-left: 4px solid var(--rosa);
+  border-radius: 8px;
+  padding: .75rem 1rem;
+}
+.resumo h2 { font-size: 1.1rem; }
+.resumo ul { margin: 0; padding-left: 1.2rem; }
+
+.aviso {
+  border-left: 4px solid var(--rosa);
+  background: #fff7fa;
+  padding: .75rem 1rem;
+  border-radius: 8px;
+}
+
+ul, ol { padding-left: 1.4rem; }
+li { margin-bottom: .35rem; }
+p { margin: 0 0 .75rem; }
+section > :last-child { margin-bottom: 0; }
+
+.placeholder {
+  background: #ffe9a8;
+  color: #3d2f00;
+  padding: 0 .25rem;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+footer { text-align: center; font-size: .95rem; padding: 1rem 0 2rem; color: #4a3d57; }
+footer p { margin-bottom: .35rem; }
+
+@media (min-width: 600px) {
+  .pagina { padding: 2rem 1rem; }
+  .cartao { padding: 1.75rem; }
+  h1 { font-size: 2rem; }
+}

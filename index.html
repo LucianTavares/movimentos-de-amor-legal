@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Política de Privacidade — Movimentos de Amor</title>
+  <meta name="description" content="Política de privacidade do app Android Movimentos de Amor: quais dados são tratados, onde ficam, anúncios, análise e falhas, e seus direitos.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- ATENÇÃO: atualize esta política (e as versões en/ e es/) ANTES de incluir qualquer novo serviço, SDK ou ferramenta de terceiros no app. -->
+<div class="pagina">
+  <nav aria-label="Idioma">
+    <ul class="idiomas">
+      <li><span aria-current="page">Português</span></li>
+      <li><a href="en/" hreflang="en" lang="en">English</a></li>
+      <li><a href="es/" hreflang="es" lang="es">Español</a></li>
+    </ul>
+  </nav>
+
+  <header class="cartao">
+    <h1>Política de Privacidade — Movimentos de Amor</h1>
+    <p class="data">Última atualização: 22 de novembro de 2026</p>
+    <div class="resumo">
+      <h2>Resumo</h2>
+      <ul>
+        <li>Seus registros de movimentos, o nome do bebê e a data provável do parto ficam só no seu aparelho.</li>
+        <li>Não há conta, cadastro, login nem nuvem.</li>
+        <li>O app não é um dispositivo médico e não substitui a equipe obstétrica.</li>
+        <li>Anúncios (Google AdMob) e análise/falhas (Firebase) só começam depois do seu consentimento.</li>
+        <li>Você pode apagar tudo pelo Android e desligar a análise nos Ajustes do app.</li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <section class="cartao" id="quem-somos">
+      <h2>1. Quem somos e contato</h2>
+      <p>O app <strong>Movimentos de Amor</strong> (pacote Android <code>com.movimentosdeamor.app</code>) é mantido por Lucian Tavares Martins da Silva, responsável por esta política.</p>
+      <p>Contato para assuntos de privacidade: <a href="mailto:lucian.sistemas.sc@gmail.com">lucian.sistemas.sc@gmail.com</a>.</p>
+    </section>
+
+    <section class="cartao" id="finalidade">
+      <h2>2. Finalidade do app</h2>
+      <p>O Movimentos de Amor serve para a gestante registrar os movimentos do bebê que ela percebe, em sessões de contagem, com histórico e estatísticas.</p>
+      <p class="aviso"><strong>Importante:</strong> o app <strong>não é um dispositivo médico</strong>, não faz diagnóstico, não afirma se o bebê está bem e não substitui a equipe obstétrica. Se você notar redução dos movimentos do bebê, procure imediatamente o seu profissional de saúde.</p>
+    </section>
+
+    <section class="cartao" id="dados">
+      <h2>3. Dados tratados e onde ficam</h2>
+      <ul>
+        <li><strong>Registros de movimentos e sessões</strong> (data e hora, duração, quantidade), <strong>nome do bebê</strong> (opcional), <strong>data provável do parto</strong> (opcional) e <strong>preferências</strong> (como o idioma) ficam <strong>somente no seu aparelho</strong>, em um banco de dados local (SQLite). Nunca são enviados a servidores do desenvolvedor, nem a serviços de anúncios ou de análise.</li>
+        <li><strong>Não há conta, cadastro, login nem nuvem.</strong></li>
+      </ul>
+    </section>
+
+    <section class="cartao" id="armazenamento">
+      <h2>4. Armazenamento local e exclusão</h2>
+      <p>Como os dados ficam apenas no seu aparelho, é você quem controla a exclusão: limpe os dados do app ou desinstale-o pelas configurações do Android. Veja o passo a passo em <a href="exclusao-de-dados.html">Exclusão de dados</a>.</p>
+    </section>
+
+    <section class="cartao" id="backup">
+      <h2>5. Backup e restauração feitos por você</h2>
+      <ul>
+        <li>O app gera um arquivo JSON e abre o compartilhamento do Android. <strong>Quem escolhe o destino é você.</strong> O app não envia o arquivo a lugar nenhum.</li>
+        <li>O arquivo <strong>não é criptografado</strong> e contém seus registros. Guarde-o com cuidado.</li>
+        <li>A restauração lê apenas um arquivo escolhido por você.</li>
+      </ul>
+    </section>
+
+    <section class="cartao" id="permissoes">
+      <h2>6. Permissões do dispositivo</h2>
+      <ul>
+        <li><strong>INTERNET</strong> e <strong>ACCESS_NETWORK_STATE</strong>: exibir anúncios e enviar relatórios de falha.</li>
+        <li><strong>AD_ID</strong> (ID de publicidade): exibir anúncios.</li>
+        <li><strong>VIBRATE</strong>: retorno tátil (vibração) ao usar o app.</li>
+      </ul>
+      <p>O app <strong>não acessa</strong> câmera, microfone, localização, contatos nem fotos.</p>
+      <!-- Aviso para quem escreveu o texto: confirme a lista final de permissões no manifesto do build de produção e ajuste se for preciso. -->
+    </section>
+
+    <section class="cartao" id="anuncios">
+      <h2>7. Anúncios com Google AdMob</h2>
+      <p>O plano gratuito exibe um banner de anúncio. Antes de qualquer anúncio, o app pede o seu consentimento pelo formulário Google UMP, e o SDK de anúncios só é iniciado depois disso.</p>
+      <p>O Google pode tratar identificadores do aparelho (como o ID de publicidade) para exibir anúncios, conforme as escolhas feitas por você no formulário. O app <strong>não envia</strong> registros de movimentos, datas de parto nem observações ao AdMob. Saiba mais na <a href="https://policies.google.com/privacy" rel="noopener">Política de Privacidade do Google</a>.</p>
+      <h3>Como limitar anúncios personalizados</h3>
+      <p>No Android, abra Configurações &gt; Google &gt; Anúncios (o caminho pode variar conforme o aparelho). Ali você pode desativar a personalização de anúncios e redefinir ou excluir o ID de publicidade.</p>
+    </section>
+
+    <section class="cartao" id="analise">
+      <h2>8. Análise de uso e falhas (Firebase)</h2>
+      <p>Usamos o Firebase Analytics e o Firebase Crashlytics, serviços do Google.</p>
+      <ul>
+        <li>Só começam <strong>depois do seu consentimento</strong> e podem ser desligados a qualquer momento em <strong>Ajustes &gt; “Ajudar a melhorar o app”</strong>.</li>
+        <li>O Analytics registra apenas <strong>três eventos anônimos, sem parâmetros</strong>: onboarding concluído, backup exportado e backup importado. Nunca registra dados de saúde, datas, contagens, nomes ou textos.</li>
+        <li>O Crashlytics recebe relatórios de falha com categorias fixas de erro e dados técnicos do aparelho (modelo e versão do Android), <strong>nunca texto digitado por você</strong>.</li>
+        <li>O Google pode tratar um identificador da instalação do app e informações técnicas do aparelho nesses serviços.</li>
+      </ul>
+      <!-- Esta política deve ser atualizada antes de incluir qualquer novo serviço (análise, anúncios, SDKs de terceiros etc.). -->
+    </section>
+
+    <section class="cartao" id="terceiros">
+      <h2>9. Compartilhamento com terceiros</h2>
+      <p>Os únicos terceiros envolvidos são os serviços do Google (AdMob e Firebase), nos termos descritos acima. <strong>Não vendemos dados pessoais</strong> e não compartilhamos seus registros de movimentos com ninguém.</p>
+    </section>
+
+    <section class="cartao" id="base-legal">
+      <h2>10. Base legal</h2>
+      <p>Conforme a Lei Geral de Proteção de Dados (LGPD, Lei 13.709/2018), o tratamento para anúncios e para análise/falhas se baseia no seu <strong>consentimento</strong> (art. 7º, I). Os registros de gravidez ficam no seu aparelho e não são tratados pelo desenvolvedor.</p>
+      <p>Para usuários da União Europeia e do Espaço Econômico Europeu, o consentimento é coletado pelo formulário UMP, conforme o GDPR.</p>
+    </section>
+
+    <section class="cartao" id="direitos">
+      <h2>11. Seus direitos</h2>
+      <p>O art. 18 da LGPD garante direitos como confirmação do tratamento, acesso, correção, eliminação, portabilidade e revogação do consentimento. Você pode exercê-los pelo e-mail <a href="mailto:lucian.sistemas.sc@gmail.com">lucian.sistemas.sc@gmail.com</a>.</p>
+      <p>Como o desenvolvedor não recebe os seus registros, grande parte dos direitos é exercida diretamente no app e no aparelho: você vê e edita seus dados no app, exporta um backup e apaga tudo pelo Android. O consentimento pode ser revogado nos Ajustes do app.</p>
+    </section>
+
+    <section class="cartao" id="retencao">
+      <h2>12. Retenção</h2>
+      <p>Os registros locais permanecem até você apagá-los, limpar os dados do app ou desinstalá-lo. Os dados de análise e de falhas seguem os prazos de retenção configurados no Firebase.</p>
+    </section>
+
+    <section class="cartao" id="seguranca">
+      <h2>13. Segurança</h2>
+      <p>Os dados locais são protegidos pelo isolamento (sandbox) do Android. Recomendamos manter o bloqueio de tela ativado e cuidar bem dos arquivos de backup, que não são criptografados.</p>
+    </section>
+
+    <section class="cartao" id="criancas">
+      <h2>14. Crianças e adolescentes</h2>
+      <p>O app é destinado a adultos (gestantes) e não é direcionado a menores de 18 anos.</p>
+    </section>
+
+    <section class="cartao" id="transferencia">
+      <h2>15. Transferência internacional</h2>
+      <p>Os serviços do Google podem processar dados fora do Brasil, conforme a política do Google.</p>
+    </section>
+
+    <section class="cartao" id="alteracoes">
+      <h2>16. Alterações nesta política</h2>
+      <p>A data de atualização, no topo e no rodapé desta página, muda sempre que o texto mudar.</p>
+    </section>
+
+    <section class="cartao" id="contato">
+      <h2>17. Contato</h2>
+      <p>Dúvidas ou pedidos sobre privacidade: <a href="mailto:lucian.sistemas.sc@gmail.com">lucian.sistemas.sc@gmail.com</a>.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Movimentos de Amor — Última atualização: 22 de novembro de 2026</p>
+    <p><a href="exclusao-de-dados.html">Exclusão de dados</a> · <a href="mailto:lucian.sistemas.sc@gmail.com">lucian.sistemas.sc@gmail.com</a></p>
+  </footer>
+</div>
+</body>
+</html>
